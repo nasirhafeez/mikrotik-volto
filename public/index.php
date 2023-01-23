@@ -60,7 +60,7 @@ if ($result->num_rows >= 1) {
                 <form method="post" action="connect.php">
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" id="form_font" name="fname" placeholder="First Name" required>
+                            <input class="input" type="text" id="form_font" name="name" placeholder="Name" required>
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -68,27 +68,10 @@ if ($result->num_rows >= 1) {
                     </div>
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" id="form_font" name="lname" placeholder="Last Name" required>
+                            <input class="input" type="email" id="form_font" name="phone" placeholder="Phone #" required>
                             <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-mobile"></i>
                             </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="email" id="form_font" name="email" placeholder="Email" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="columns is-centered is-mobile">
-                        <div class="control">
-                            <label class="checkbox">
-                                <input type="checkbox" required>
-                                I agree to the <a href="policy.php">Terms of Use</a>
-                            </label>
                         </div>
                     </div>
                     <br>

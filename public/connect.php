@@ -7,30 +7,27 @@ $mac = $_SESSION["mac"];
 $ip = $_SESSION["ip"];
 $link_login = $_SESSION["link-login"];
 $link_login_only = $_SESSION["link-login-only"];
-$linkorig = "https://www.google.com";
+$linkorig = $_SERVER['REDIRECT_URL'];
 
 $last_updated = date("Y-m-d H:i:s");
 
 $username="admin";
 
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['email'];
+$name = $_POST['name'];
+$phone = $_POST['phone'];
 
 if ($_SESSION["user_type"] == "new") {
     mysqli_query($con, "
     CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `firstname` varchar(45) NOT NULL,
-    `lastname` varchar(45) NOT NULL,
-    `email` varchar(45) NOT NULL,
+    `name` varchar(45) NOT NULL,
+    `phone` varchar(45) NOT NULL,
     `mac` varchar(45) NOT NULL,
-    `ip` varchar(45) NOT NULL,
     `last_updated` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
     )");
 
-    mysqli_query($con,"INSERT INTO `$table_name` (firstname, lastname, email, mac, ip, last_updated) VALUES ('$fname', '$lname', '$email', '$mac', '$ip', '$last_updated')");
+    mysqli_query($con,"INSERT INTO `$table_name` (name, phone, mac, last_updated) VALUES ('$name', '$phone', '$mac', '$last_updated')");
 }
 
 mysqli_close($con);
