@@ -14,7 +14,7 @@ $last_updated = date("Y-m-d H:i:s");
 $username="admin";
 
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$phone = $_POST['country_code'] . $_POST['phone_number'];
 
 if ($_SESSION["user_type"] == "new") {
     mysqli_query($con, "
