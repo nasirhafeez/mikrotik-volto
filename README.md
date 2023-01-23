@@ -6,8 +6,6 @@ The following actions are required to use the code given in this repo:
 
 Rename the `.env.example` file to `.env` and set the values of the given project-wide environment variables in it.
 
-Rename the `parameters.php.example` file to `parameters.php` and set the values of variables according to the current site.
-
 *Install Composer*
 
 Navigate to public folder and install [composer](https://getcomposer.org/download/). Then run `php composer.phar install` to install the packages given in `composer.json`.
