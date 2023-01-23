@@ -77,7 +77,7 @@
                     </div>
                     <br>
                     <div class="buttons is-centered">
-                        <button class="button is-success is-light">Connect</button>
+                        <button class="button is-normal">Connect</button>
                     </div>
                 </form>
             </div>
