@@ -49,6 +49,7 @@
         <br>
         <figure id="logo">
             <img src="assets/images/logo.png">
+            <div id="contact_form" class="content is-size-5 has-text-centered has-text-weight-bold">Restaurant & Lounge
         </figure>
     </div>
 
