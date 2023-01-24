@@ -317,7 +317,7 @@
                         </p>
                         <p class="control">
                             <input class="input" type="tel" id="phone_number" name="phone_number"
-                                   placeholder="Phone Number" pattern="[0-9]{8}" required>
+                                   placeholder="Phone Number" minlength="8" maxlength="12" required>
                         </p>
                     </div>
                     <br>
