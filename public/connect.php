@@ -13,10 +13,11 @@ $last_updated = date("Y-m-d H:i:s");
 
 $username="admin";
 
-$name = $_POST['name'];
-$phone = $_POST['country_code'] . $_POST['phone_number'];
-
 if ($_SESSION["user_type"] == "new") {
+
+    $name = $_POST['name'];
+    $phone = $_POST['country_code'] . $_POST['phone_number'];
+
     mysqli_query($con, "
     CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
